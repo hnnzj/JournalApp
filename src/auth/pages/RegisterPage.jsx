@@ -8,9 +8,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { startCreatingUserWithEmailAndPassword } from '../../store/auth/thunk';
 
 const formData = {
-    email: 'fernando@fernando.com',
-    password: '1234',
-    displayName: 'Jorge',
+    email: '',
+    password: '',
+    displayName: '',
 };
 
 const formValidations = {
@@ -53,7 +53,6 @@ export const RegisterPage = () => {
 
     return (
         <AuthLayout title='Register'>
-            <h1>FormValid {isFormValid ? 'valido' : 'incorrecto'}</h1>
             <form
                 onSubmit={onSubmit}
                 className='animate__animated animate__fadeIn animate__faster'
